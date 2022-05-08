@@ -16,6 +16,7 @@
             rel="stylesheet"
             href="css/style.css"
         >
+        
     </head>
 
     <body>
@@ -91,29 +92,176 @@
                         <select id="dropdown">
 
                             <option
-                                value="dropdown"
+                                disabled
+                                selected
+                                value
                             >Select current role
                             </option>
                             <option
-                                value="select"
-                            >Select current role
+                                value="select">
+                                Student
                             </option>
                             <option
                                 value="dropdown"
-                            >Select current role
+                            >Full Time Job
                             </option>
                             <option
                                 value="dropdown"
-                            >Select current role
+                            >Full Time Learner
                             </option>
                             <option
                                 value="dropdown"
-                            >Select current role
+                            >Prefer not to say
+                            </option>
+                            <option value="">Other
                             </option>
                         </select>
                     </div>
+                    <div>
+                        <p>Would you recommend
+                            freeCodeCamp to a
+                            friend?</p>
+                        <label
+                            for="user-recommend"
+                        >
+                            <input
+                                type="radio"
+                                name="user-recommend"
+                                id="user-recommend"
+                                checked
+                                required
+                            />Definitely
+                        </label> <br />
+                        <label
+                            for="user-recommend"
+                        >
+                            <input
+                                type="radio"
+                                name="user-recommend"
+                                id="user-recommend"
+                            />Maybe
+                        </label> <br />
+                        <label
+                            for="user-recommend"
+                        >
+                            <input
+                                type="radio"
+                                name="user-recommend"
+                                id="user-recommend"
+                            >Not sure
+                        </label>
+                    </div>
+                    <div>
+                        <p>What would you like to
+                            see improved? (Check
+                            all that apply)</p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Front-end Projects"
+                                name="feedback"
+                            />
+                            Front-end Projects
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Back-end Projects"
+                                name="feedback"
+                            />
+                            Back-end Projects
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Data Visualization"
+                                name="feedback"
+                            />
+                            Data Visualization
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Challenges"
+                                name="feedback"
+                            />
+                            Challenges
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Open Source Community"
+                                name="feedback"
+                            />
+                            Open Source Community
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Videos"
+                                name="feedback"
+                            />
+                            Videos
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Gitter help rooms"
+                                name="feedback"
+                            />
+                            Gitter help rooms
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="City Meetups"
+                                name="feedback"
+                            />
+                            City Meetups
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Wiki"
+                                name="feedback"
+                            />
+                            Wiki
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Forum"
+                                name="feedback"
+                            />
+                            Forum
+                        </label><br />
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Additional Courses"
+                                name="feedback"
+                            />
+                            Additional Courses
+                        </label><br />
+
+                    </div>
+                    <div>
+                        <p>Any comments or
+                            suggestions?</p>
+                        <textarea
+                            name="additional comment"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your comment"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <button
+                            id="submit">Submit</button>
+                    </div>
                 </form>
             </div>
+
         </section>
     </body>
 
